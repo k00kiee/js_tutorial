@@ -1,11 +1,11 @@
-let numA = 1;
-let numB = 3;
-min(numA, numB);
+let x = prompt("x?:",2);
+let y = prompt("n?:",3);
+alert(pow(x, y));
 
-function min(num1, num2){
-    if(num1 < num2){
-        alert(num1);
-    }else{
-        alert(num2);
+function pow(x, n){
+    let ret_val = x;
+    for(let i = 1; i < n; i++){
+        ret_val *= x;
     }
+    return ret_val;
 }
