@@ -9,3 +9,5 @@ function pow(x, n){
     }
     return ret_val;
 }
+
+//pushのテストです。
