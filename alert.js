@@ -11,3 +11,4 @@ function pow(x, n){
 }
 
 //pushのテストです。
+//テスト２
