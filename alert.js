@@ -1,15 +1,18 @@
-let num = prompt("Enter a number:",10);
-let flug
 
-next:
-for(let i = 2; i <= num; i++ ){
+let a = +prompt('a?','');
 
-    flug = true;
-    for(let j = 2; j < i; j++ ){
-        if(i%j == 0){
-            //素数ではない
-            continue next;
-        }
-    }
-    alert(`${i}`);
+switch(a){
+    case 0:
+        alert(0);
+        break;
+    case 1:
+        alert(1);
+        break;
+    case 2:
+    case 3:
+        alert('2,3');
+        break;
+    default:
+        alert('not a number!');
+        break;
 }
