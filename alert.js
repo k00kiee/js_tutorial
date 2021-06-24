@@ -1,15 +1,19 @@
-let x = prompt("x?:",2);
-let y = prompt("n?:",3);
-alert(pow(x, y));
+let ask = (question, yes, no) => confirm(question) ? yes():no();
 
-function pow(x, n){
-    let ret_val = x;
-    for(let i = 1; i < n; i++){
-        ret_val *= x;
-    }
-    return ret_val;
-}
+ask(
+    "Do you agree?",
+    () => alert("You agreed."),
+    () => alert("You canceled the execution.")
+);
 
-//pushのテストです。
-//テスト２
-//ブランチのテスト
+
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+//   }
+  
+//   ask(
+//     "Do you agree?",
+//     function() { alert("You agreed."); },
+//     function() { alert("You canceled the execution."); }
+//   );
