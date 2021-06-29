@@ -1,11 +1,11 @@
-let user = new Object();
-user = {
-    name:"john",
-    surname:"Smith",
+// let schedule = {};
+// alert( isEmpty(schedule) ); // true
+// schedule["8:30"] = "get up";
+// alert( isEmpty(schedule) ); // false
+
+function isEmpty(schedule) {
+    for(let key in schedule){
+        return false;
+    }
+    return true;
 }
-
-user[name] = "Pete";
-alert(user[name]);
-
-delete user[name];
-alert(user[name]);
