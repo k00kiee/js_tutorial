@@ -19,6 +19,12 @@
 <body>
     <script src="alert.js"></script>
     <script src="test.js"></script>
+	<script>
+		let schedule = {};
+		alert( isEmpty(schedule) ); // true
+		schedule["8:30"] = "get up";
+		alert( isEmpty(schedule) ); // false
+	</script>
 
     <!-- the element with id="mocha" will contain test results -->
     <div id="mocha"></div>
