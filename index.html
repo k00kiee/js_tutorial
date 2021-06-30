@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- add mocha css, to show results -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
-	<!-- add mocha framework code -->
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
 	<script>
 		mocha.setup('bdd'); // minimal setup
 	</script>
-	<!-- add chai -->
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
 	<script>
 		// chai has a lot of stuff, let's make assert global
@@ -17,21 +16,30 @@
 </head>
 
 <body>
-    <script src="alert.js"></script>
-    <script src="test.js"></script>
+    <!-- <script src="alert.js"></script>
+    <script src="test.js"></script> -->
+	<script src="multiplyNumeric.js"></script>
+	<script src="multiplyNumericTest.js"></script>
 	<script>
-		let schedule = {};
-		alert( isEmpty(schedule) ); // true
-		schedule["8:30"] = "get up";
-		alert( isEmpty(schedule) ); // false
+		// let schedule = {};
+		// alert( isEmpty(schedule) ); // true
+		// schedule["8:30"] = "get up";
+		// alert( isEmpty(schedule) ); // false
+
+		let menu = {
+    		width: 200,
+    		height: 300,
+    		title: "My menu"
+		};
+
+		multiplyNumeric(menu);
+		alert( "menu width=" + menu.width + " height=" + menu.height + " title=" + menu.title );
 	</script>
 
-    <!-- the element with id="mocha" will contain test results -->
     <div id="mocha"></div>
-
-    <!-- run tests! -->
     <script>
         mocha.run();
     </script>
+
 </body>
 </html>
