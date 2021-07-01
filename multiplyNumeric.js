@@ -5,3 +5,5 @@ function multiplyNumeric(menu) {
         }
     }
 }
+
+//テスト
