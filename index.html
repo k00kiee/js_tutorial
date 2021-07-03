@@ -18,22 +18,30 @@
 <body>
     <!-- <script src="alert.js"></script>
     <script src="test.js"></script> -->
-	<script src="multiplyNumeric.js"></script>
-	<script src="multiplyNumericTest.js"></script>
+	<!-- <script src="multiplyNumeric.js"></script>
+	<script src="multiplyNumericTest.js"></script> -->
+	<script src="https://github.com/sinonjs/sinon.git"></script>
+	<script src="calculator.js"></script>
+	<script src="calculatorTest.js"></script>
 	<script>
 		// let schedule = {};
 		// alert( isEmpty(schedule) ); // true
 		// schedule["8:30"] = "get up";
 		// alert( isEmpty(schedule) ); // false
 
-		let menu = {
-    		width: 200,
-    		height: 300,
-    		title: "My menu"
-		};
+		// let menu = {
+    	// 	width: 200,
+    	// 	height: 300,
+    	// 	title: "My menu"
+		// };
 
-		multiplyNumeric(menu);
-		alert( "menu width=" + menu.width + " height=" + menu.height + " title=" + menu.title );
+		// multiplyNumeric(menu);
+		// alert( "menu width=" + menu.width + " height=" + menu.height + " title=" + menu.title );
+
+		//calculatorの動作確認
+		calculator.read();
+		alert(calculator.sum());
+		alert(calculator.mul());
 	</script>
 
     <div id="mocha"></div>
