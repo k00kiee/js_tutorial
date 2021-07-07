@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
 	<script>
@@ -12,27 +12,39 @@
 	<script>
 		// chai has a lot of stuff, let's make assert global
 		let assert = chai.assert;
-	</script>
+	</script> -->
 </head>
 
 <body>
-	<script src=".\lib\calculator.js"></script>
+	<!-- <script src=".\lib\calculator.js"></script> -->
 
 	<!-- <script src=".\node_modules\sinon\lib\sinon-esm.js"></script> -->
 	<!-- <script src="https://ja.js.cx/test/libs.js"></script> -->
-	<script src=".\node_modules\sinon\pkg\sinon.js"></script>
-	<script src=".\test\calculatorTest.js"></script>
+	<!-- <script src=".\node_modules\sinon\pkg\sinon.js"></script>
+	<script src=".\test\calculatorTest.js"></script> -->
+
+	<script src=".\lib\ladder.js"></script>
+	<script src="https://ja.js.cx/test/libs.js"></script>
+	<script src=".\test\ladderTest.js"></script>
 	<script>
 		//calculatorの動作確認
-		calculator.read();
-		alert(calculator.sum());
-		alert(calculator.mul());
+		// calculator.read();
+		// alert(calculator.sum());
+		// alert(calculator.mul());
+		
+		//ladderの動作確認
+		// ladder.up();
+		// ladder.up();
+		// ladder.down();
+		// ladder.showStep(); // 1
+		ladder.up().up().down().showStep(); // 1
+
 	</script>
 
-    <div id="mocha"></div>
+    <!-- <div id="mocha"></div>
     <script>
         mocha.run();
-    </script>
+    </script> -->
 
 </body>
 </html>
